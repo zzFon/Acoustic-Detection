@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>README.md - Grip</title>
+  <link rel="icon" href="/__/grip/static/favicon.ico" />
+  <link rel="stylesheet" href="/__/grip/asset/github-f84b09929e4d948a5727c0c312da25f89ded0439c0e17586ebfabd3b1a40c104c8ccd4f0b2dd5f44ec7c916d4e64a008a3916640b39e225d7afe17d2ae681591.css" />
+  <link rel="stylesheet" href="/__/grip/asset/frameworks-98cac35b43fab8341490a2623fdaa7b696bbaea87bccf8f485fd5cdb4996cd9b52bdb24709fb3bab0a0dcff4a29187d65028ee693d609ce5c0c3283c77a247a9.css" />
+  <link rel="stylesheet" href="/__/grip/asset/site-e1e1bc98a53e47d4009cc4307d22206e8db8852fa7517c52b94b391b92cc430fb9c230b54d229f83125bda3eb53d7c9af78fb0330375393eebecc179adb754bf.css" />
+  <link rel="stylesheet" href="/__/grip/static/octicons/octicons.css" />
+  <style>
+    /* Page tweaks */
+    .preview-page {
+      margin-top: 64px;
+    }
+    /* User-content tweaks */
+    .timeline-comment-wrapper > .timeline-comment:after,
+    .timeline-comment-wrapper > .timeline-comment:before {
+      content: none;
+    }
+    /* User-content overrides */
+    .discussion-timeline.wide {
+      width: 920px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div id="preview-page" class="preview-page" data-autorefresh-url="/__/grip/refresh/">
+
+
+
+      <div role="main" class="main-content">
+        <div class="container new-discussion-timeline experiment-repo-nav">
+          <div class="repository-content">
+            <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
+
+                <h3>
+                  <span class="octicon octicon-book"></span>
+                  README.md
+                </h3>
+
+              <article class="markdown-body entry-content" itemprop="text" id="grip-content">
+                <p>Title:  TUT Rare Sound events 2017, Evaluation dataset</p>
+<h1>
+<a id="user-content-tut-rare-sound-events-2017-evaluation-dataset" class="anchor" href="#tut-rare-sound-events-2017-evaluation-dataset" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TUT Rare Sound events 2017, Evaluation dataset</h1>
+<p><a href="http://arg.cs.tut.fi/" rel="nofollow">Audio Research Group / Tampere University of Technology</a></p>
+<p>Authors</p>
+<ul>
+<li>Aleksandr Diment (<a href="mailto:aleksandr.diment@tut.fi">aleksandr.diment@tut.fi</a>, <a href="http://www.cs.tut.fi/%7Ediment/" rel="nofollow">http://www.cs.tut.fi/~diment/</a>)</li>
+<li>Toni Heittola (<a href="mailto:toni.heittola@tut.fi">toni.heittola@tut.fi</a>, <a href="http://www.cs.tut.fi/%7Eheittolt/" rel="nofollow">http://www.cs.tut.fi/~heittolt/</a>)</li>
+<li>Annamaria Mesaros (<a href="mailto:annamaria.mesaros@tut.fi">annamaria.mesaros@tut.fi</a>, <a href="http://www.cs.tut.fi/%7Emesaros/" rel="nofollow">http://www.cs.tut.fi/~mesaros/</a>)</li>
+<li>Tuomas Virtanen (<a href="mailto:tuomas.virtanen@tut.fi">tuomas.virtanen@tut.fi</a>, <a href="http://www.cs.tut.fi/%7Etuomasv/" rel="nofollow">http://www.cs.tut.fi/~tuomasv/</a>)</li>
+</ul>
+<p>Background data recording and annotation</p>
+<ul>
+<li>Eemi Fagerlund</li>
+<li>Aku Hiltunen</li>
+</ul>
+<p>Event data annotation, mixture synthesizer software:</p>
+<ul>
+<li>Aleksandr Diment</li>
+</ul>
+<h1>
+<a id="user-content-dataset" class="anchor" href="#dataset" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dataset</h1>
+<p>TUT Rare Sound events 2017, evaluation dataset consists of source files for creating mixtures of rare sound events with background audio, as well a set of readily generated mixtures and recipes for generating them.</p>
+<p>The "source" part of the dataset consists of two subsets:</p>
+<ul>
+<li>background recordings from 15 different acoustic scenes,</li>
+<li>recordings with the target rare sound events from three classes, accompanied by annotations of their temporal occurrences.</li>
+</ul>
+<p>The mixture set consists of 1500 mixtures (500 per target class, with half of the mixtures not containing any target class events).</p>
+<h3>
+<a id="user-content-background-recordings" class="anchor" href="#background-recordings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Background recordings</h3>
+<p>The background recordings are from 15 different acoustic scenes and are an almost exact copy of TUT Acoustic scenes 2016, evaluation dataset (see <a href="https://zenodo.org/record/1040168" rel="nofollow">https://zenodo.org/record/1040168</a>), with the exception of recordings naturally containing target class events, which were removed. When using the original version of the dataset, refer to the provided bg_screening.csv file to obtain the lists of removed files.</p>
+<p>For more information about the dataset of background recordings, see <code>source_data/bgs/README.md</code>.</p>
+<h3>
+<a id="user-content-sound-event-recordings" class="anchor" href="#sound-event-recordings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sound event recordings</h3>
+<p>The rare sound events are of the following classes: baby cry, glass break and gun shot. The recordings originate from freesound.org, are presented in their original form, and are accompanied in this dataset by annotations of the temporal occurrences of isolated events. All the events were screened by a human annotator and only the ones clearly corresponding to the target class were retained (e.g. original recordings of baby cries included also sounds of baby sighs, coughs etc., which were discarded). The unique event counts are the following:</p>
+<ul>
+<li>baby cry: 61</li>
+<li>glass break: 58</li>
+<li>gun shot: 76</li>
+</ul>
+<p>The isolated sound events were collected from freesound.org in the following manner. All the recordings matching the target class name query and with a sampling rate &gt;= 44100 Hz were downloaded from freesound.org using the API with python wrapper [1]. The target sound events were thereupon isolated from the recordings using a two-step procedure.</p>
+<p>First, a semi-supervised segmentation [2] was performed with an SVM model trained to distinguish between high-energy and low-energy short-term frames and then applied on the whole recording. A dynamic thresholding was used to detect the active segments.</p>
+<p>The obtained segments were then analyzed by a human annotator, discarding the ones not belonging to the target class (baby coughs, unrealistically sounding gun shots e.g. laser guns etc.) The temporal annotations were then manually refined for all the isolated events with a step of 100 ms in such a way that there would not be abrupt clicks on the boundaries, but no silence regions before or after the events either.</p>
+<p>Due to the nature of these sounds, there still might be regions of silence inside the annotated events (e.g. a baby cry consisting of two phrases, annotated as one cry). Providing a frame-level annotation on target event presence was deemed infeasible. However, an attempt was made to eliminate such events with pauses longer than one second. That is, the temporal annotations always indicate that with an error of 100 ms at most there is an onset or an offset of the target event, and within this region the event is either active all the time or might (at rare occasions) include a pause of at most one second.</p>
+<p>The statistics of the duration of the isolated events in seconds are the following:</p>
+<ul>
+<li>babycry, max: 4.82, min: 0.48, mean: 1.80, std: 0.99</li>
+<li>glassbreak, max: 2.16, min: 0.24, mean: 0.85, std: 0.41</li>
+<li>gunshot, max: 2.28, min: 0.20, mean: 0.83, std: 0.58</li>
+</ul>
+<p>The original freesound recordings are located at <code>source_data/events/[classname]/[fileid].wav</code> and are accompanied by a text file [<code>[fileid].yaml</code>] in the same location, which consists of the annotations of the isolated events (field <code>valid_segments</code> with start and end times in seconds), as well as other meta data about the recording, as provided on freesound, including the license.</p>
+<h3>
+<a id="user-content-mixtures" class="anchor" href="#mixtures" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mixtures</h3>
+<p>The parameters of the generated mixtures are the following:</p>
+<ul>
+<li>500 mixtures per target event class.</li>
+<li>Event presence probability 0.5: this stands for generating 250 mixtures with target event present and 250 "mixtures" of only background, for each target class. This way, the rareness of the events and the detection nature of the task are facilitated.</li>
+<li>Event-to-background ratios (EBR) -6, 0 and 6 dBs. The EBR is defined as a ratio of average RMSE values calculated over the duration of the event and the corresponding background segment on which the event will be mixed, respectively.</li>
+</ul>
+<p>The background instance, the event instance, the event timing in the mixture, its presence flag and the EBR value are all selected randomly and uniformly, allowing for a generation of infinite number of mixtures, which might, however, share the underlying source data. Therefore, this dataset is not suited to be split into training and test subsets. Instead, the
+separately released Development dataset should be used for training (see <a href="https://zenodo.org/record/401395" rel="nofollow">https://zenodo.org/record/401395</a>). The underlying
+source data in devtrain, devtest subsets of the Development set as well as of the current Evaluation set is different
+(in terms of locations of the backgrounds and usernames of the sound event files).</p>
+<p>The creation of the mixtures is performed in two stages: generating mixture recipes and performing the mixing.</p>
+<h4>
+<a id="user-content-generating-mixture-recipes" class="anchor" href="#generating-mixture-recipes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Generating mixture recipes</h4>
+<p>Mixture recipes (mixtures) are text files containing:</p>
+<ul>
+<li>the file paths to the source background and event (if present),</li>
+<li>the event presence flag (some mixtures might not have any target events),</li>
+<li>the timing of the event in the original event recording (fields <code>segment_start_seconds</code>, <code>segment_end_seconds</code>),</li>
+<li>the timing of the event in the mixture to be generated (<code>event_start_in_mixture_seconds</code>),</li>
+<li>the amplitude scaling factor of the event in the mixture (allowing for different event-to-background ratios, EBR)</li>
+<li>the corresponding EBR value,</li>
+<li>the name of the mixture audio file, constructed as a running id followed by the hash of the parameters that generate the mixture,</li>
+<li>the annotation string to accompany the generated audio. It includes the filename of the mixture, and, if the target event is present in the mixture, its start and end times and its label.</li>
+</ul>
+<p>The format of the annotation string is the following:</p>
+<pre><code>[audio file (string)][tab][start time seconds][tab][end time seconds][tab][event class label]  # if event is present
+</code></pre>
+<p>[audio file (string)]  # if no event is present</p>
+<p>The recipes are generated randomly, but with a fixed seed of the random generator, allowing reproducibility.</p>
+<p>Along with the recipes, event list files are generated, consisting of annotation strings, defined above, for all the mixtures of the current subset.</p>
+<h4>
+<a id="user-content-generating-mixtures" class="anchor" href="#generating-mixtures" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Generating mixtures</h4>
+<p>The mixtures are generated by going through the mixture recipes and summing the backgrounds with the corresponding event signals according to the recipes. For the source files with sampling rate different from the target 44100 Hz (event recordings were allowed to be of a higher sampling rate), resampling is performed prior to the summation.
+To avoid clipping, the mixtures are scaled with a factor of 0.2 (value found experimentally suitable for the given dataset and mixture parameters). All the mixtures are scaled, not just the clipping ones, so that the dynamics would be preserved. To avoid introducing quantization noise, the files are saved in 24 bit format.</p>
+<h4>
+<a id="user-content-mixture-synthesizer-software" class="anchor" href="#mixture-synthesizer-software" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Mixture synthesizer software</h4>
+<p>A software is provided, which, given the default parameters, produces exactly the same mixture recipes and audio mixture files, as in this dataset. It also allows for tuning the parameters in order to obtain larger datasets: number of mixtures, EBR values and event presence probabilities are adjustable.</p>
+<p>The latest version of the mixture generation software is available at <a href="http://github.com/TUT-ARG/TUT_Rare_sound_events_mixture_synthesizer">http://github.com/TUT-ARG/TUT_Rare_sound_events_mixture_synthesizer</a>.</p>
+<h3>
+<a id="user-content-file-structure" class="anchor" href="#file-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>File structure</h3>
+<pre><code>README.md                  this file, markdown-format
+README.html                this file, html-format
+data                       data folder (source, recipes, mixtures)
+└───mixture_data           mixture recipes and mixture audio files
+│   │  EULA.pdf            End user license agreement for the mixture data
+│   └───evaltest           evaluation set, test subset
+│        └───bbb81504db15a03680a0044474633b67  mixing parameter hash
+│           └───meta
+│           │   │   mixture_recipes_evaltest_babycry.yaml
+│           │   │   ...
+│           │   │   event_list_evaltest_babycry.csv
+│           │       ...
+│           └───audiomixture audio files
+│               │   mixture_evaltest_babycry_000_35c7bc20a21ec8fbb7097c6fb71487b5.wav
+│               │   ...
+│
+└───source_data
+│   │
+│   └───bgs                 Background dataset
+│   │   │   README.md       Detailed description of the original background dataset
+│   │   │  EULA.pdf         End user license agreement for the background data
+│   │   │   bg_screening.csv
+│   │   └───audio
+│   │       │   1.wav
+│   │       │   ...
+│   │
+│   └───cv_setup             Cross-vaildation setup (as part of the cominded Development and Evaluation dataset)
+│       │   bgs_evaltest.yaml
+│       │   events_evaltest.yaml
+│
+└───────events               Original freesound recordings, with licesnses provided file-wise
+│       └───────babycry
+│       │       │   13801.wav          Filename = freesound file id
+│       │       │   13801.yamlmeta     file with timing of isolated events, license information etc.
+│       │       │   ...
+│       │
+│       └───────glassbreak
+│       │       │   ...
+│       │
+│       └───────gunshot
+│               │   ...
+│
+TUT_Rare_sound_events_mixture_synthesizer
+│ EULA.pdf
+│core.py                          core generation programme
+│generate_evaltest_mixtures.py    programme for generating evaltest mixtures
+│mixing_params_evaltest.yaml      parameter file for evaltest mixtures as used in DCASE 2017 challenge
+│requirements.txt                 required packages
+</code></pre>
+<h1>
+<a id="user-content-usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h1>
+<p>The simplest suggested use-case is to work directly on the provided mixtures.</p>
+<p>For more advanced scenarios, use the provided source data. To generate mixtures of various quantities, EBR values etc., use the provided software <code>TUT_Rare_sound_events_mixture_synthesizer</code>. To generate your own evaltest set, specify the parameters in <code>TUT_Rare_sound_events_mixture_synthesizer/mixing_params_evaltest.yaml</code> and then run:</p>
+<p>python generate_evaltest_mixtures.py</p>
+<p>(assuming the data folder is located at <code>../data</code> relatively to the synthesizer folder). The full command is:</p>
+<p>python generate_evaltest_mixtures.py -data_path '../data' -params mixing_params_evaltest.yaml</p>
+<p>For more details, see the help section of the programme (<code>python generate_evaltest_mixtures.py --help</code>).</p>
+<h1>
+<a id="user-content-license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h1>
+<p>The dataset components are licensed in the following manner:</p>
+<ul>
+<li>Target sound event recordings (<code>source_data/events</code>) are accompanied by the license information on a per-file basis: for each <code>*.wav</code> file see the corresponding <code>*.yaml</code> file with information about the author and the license. Such licenses as CC BY-NC 3.0, CC BY 3.0, Sampling Plus 1.0 and CC0 1.0 are applicable, depending on the file.</li>
+<li>Source background recordings are licensed under the EULA.pdf file at <code>source_data/bgs/EULA.pdf</code>.</li>
+<li>The generated mixtures are licensed under the EULA.pdf file at <code>mixture_data/EULA.pdf</code>.</li>
+<li>The mixture sets use many sounds from freesound, for the full list with attribution see file: <code>source_data/cv_setup/events_evaltest.yaml</code>.</li>
+<li>The TUT_Rare_sound_events_mixture_synthesizer software is licensed under EULA.pdf at <code>TUT_Rare_sound_events_mixture_synthesizer/EULA.pdf</code>.</li>
+</ul>
+<h1>
+<a id="user-content-references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>References</h1>
+<p>[1] <a href="https://github.com/xavierfav/freesound-python-tools">https://github.com/xavierfav/freesound-python-tools</a></p>
+<p>[2] Giannakopoulos T (2015) pyAudioAnalysis: An Open-Source Python Library for Audio Signal Analysis. PLoS ONE 10(12): e0144610. doi:10.1371/journal.pone.0144610</p>
+
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+  </div>
+  <div>&nbsp;</div>
+  </div><script>
+    function showCanonicalImages() {
+      var images = document.getElementsByTagName('img');
+      if (!images) {
+        return;
+      }
+      for (var index = 0; index < images.length; index++) {
+        var image = images[index];
+        if (image.getAttribute('data-canonical-src') && image.src !== image.getAttribute('data-canonical-src')) {
+          image.src = image.getAttribute('data-canonical-src');
+        }
+      }
+    }
+
+    function scrollToHash() {
+      if (location.hash && !document.querySelector(':target')) {
+        var element = document.getElementById('user-content-' + location.hash.slice(1));
+        if (element) {
+           element.scrollIntoView();
+        }
+      }
+    }
+
+    function autorefreshContent(eventSourceUrl) {
+      var initialTitle = document.title;
+      var contentElement = document.getElementById('grip-content');
+      var source = new EventSource(eventSourceUrl);
+      var isRendering = false;
+
+      source.onmessage = function(ev) {
+        var msg = JSON.parse(ev.data);
+        if (msg.updating) {
+          isRendering = true;
+          document.title = '(Rendering) ' + document.title;
+        } else {
+          isRendering = false;
+          document.title = initialTitle;
+          contentElement.innerHTML = msg.content;
+          showCanonicalImages();
+        }
+      }
+
+      source.onerror = function(e) {
+        if (e.readyState === EventSource.CLOSED && isRendering) {
+          isRendering = false;
+          document.title = initialTitle;
+        }
+      }
+    }
+
+    window.onhashchange = function() {
+      scrollToHash();
+    }
+
+    window.onload = function() {
+      scrollToHash();
+    }
+
+    showCanonicalImages();
+
+    var autorefreshUrl = document.getElementById('preview-page').getAttribute('data-autorefresh-url');
+    if (autorefreshUrl) {
+      autorefreshContent(autorefreshUrl);
+    }
+  </script>
+</body>
+</html>
